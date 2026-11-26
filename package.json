@@ -1,0 +1,45 @@
+{
+  "name": "solana-time-machine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Solana Time Machine: six years of Solana culture, a multi-launchpad and a retro liquidity engine.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "verify:archive": "node scripts/verify-archive.mjs",
+    "meteora:config": "node scripts/meteora-create-config.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@meteora-ag/cp-amm-sdk": "^1.5.1",
+    "@meteora-ag/dynamic-bonding-curve-sdk": "^2.0.1",
+    "@pump-fun/pump-sdk": "^4.3.1",
+    "@pump-fun/pump-swap-sdk": "^2.2.0",
+    "@raydium-io/raydium-sdk-v2": "^0.2.87-alpha",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/wallet-adapter-base": "^0.9.28",
+    "@solana/wallet-adapter-react": "^0.15.40",
+    "@solana/web3.js": "^1.99.0",
+    "bn.js": "^5.2.5",
+    "bs58": "^6.0.0",
+    "decimal.js": "^10.6.0",
+    "next": "^16.4.6",
+    "postgres": "^4.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/node": "^22.20.7",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
